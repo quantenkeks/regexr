@@ -37,7 +37,7 @@ gulp.task("deploy", function(cb) {
 });
 
 gulp.task("browser-sync", function() {
-	browserSync.init({ server: { baseDir: "./" }, options: { ignored: "./dev/**/*"} });
+	browserSync.init({ server: { baseDir: "./" }, options: { open: false, ignored: "./dev/**/*" } });
 });
 
 gulp.task("watch", function() {
